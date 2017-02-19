@@ -10,7 +10,7 @@ With this scrit, you can check the latest articles, read the abstract of one art
 
 Run it in terminal or python shell with python2.
 
-Follow the message to do what you want it to do.
+Follow the message to choose what you want it todo.
 
 The pdf file will be downloaded in a folder of current directory named 'ArxivPaper'.
 
@@ -18,4 +18,4 @@ The pdf file will be downloaded in a folder of current directory named 'ArxivPap
 
 Basically it can also be used in other subject of arxiv.org, with modification of the subject link.
 
-Of course this script can add the function to choose the subject, if I have time , I will do it.
+Of course this script can add the function to choose the subject, in plan.
