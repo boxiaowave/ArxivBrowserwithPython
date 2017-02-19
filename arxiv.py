@@ -1,4 +1,5 @@
 #-*- coding: utf-8 -*-
+#!/usr/bin/python
 # ******************************************************
 # Author       : BoXiao
 # Last modified: 2016-07-23 02:48
@@ -8,23 +9,10 @@
 # ******************************************************
 import urllib
 from bs4 import BeautifulSoup
-import re
 import os
 
-
 homep = 'http://arxiv.org'
-
-
 f = urllib.urlopen('http://arxiv.org/list/cond-mat.quant-gas/recent')
-
-'''
-file = open('page.txt','w')
-file.write(f.read())
-file.close()
-file = open('page.txt','r')
-a = BeautifulSoup(file.read(),'lxml')
-'''
-
 a = BeautifulSoup(f, 'lxml')
 
 
