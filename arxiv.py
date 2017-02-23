@@ -30,14 +30,14 @@ for dot in s:
     if dot.name == 'dd':
         for tag in dot.find_all('div', class_='list-title mathjax'):
             title = ' '.join(
-                (tag.span.string+tag.span.next_sibling.string).encode('utf-8').split())
+                (tag.span.string + tag.span.next_sibling.string).encode('utf-8').split())
         for tag in dot.find_all('div', class_='list-authors'):
             Authors = 'Authors: ' + \
                 ','.join([authors.string for authors in tag.find_all('a')])
         tili.append(title)
         tili2.append(title)
         authorli.append(Authors)
-        tidic[title] = [i+1, time, Authors]
+        tidic[title] = [i + 1, time, Authors]
         i += 1
     else:
         time = dot.string.encode('utf - 8')
@@ -78,7 +78,7 @@ def show_paperlistlat():
 
 
 def show_authors(i):
-    print '\n', tili2[i - 1], '\n', authorli[i-1]
+    print '\n', tili2[i - 1], '\n', authorli[i - 1]
 
 
 def show_abstract(i):
@@ -100,6 +100,8 @@ def download_file(i):
     print 'done.:-D'
 
 # print tili
+
+
 def next_step():
     print '\nWhat do you want me to do next?'
     print u'[0]给朕退下。'
